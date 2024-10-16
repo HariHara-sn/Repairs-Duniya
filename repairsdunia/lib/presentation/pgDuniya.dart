@@ -45,8 +45,12 @@ class _PGDuniyaScreenState extends State<PGDuniyaScreen> {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Column(
+          child: 
+          Column(
+
+            
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // Gender Selection
               Row(
@@ -174,13 +178,13 @@ class _PGDuniyaScreenState extends State<PGDuniyaScreen> {
               const SizedBox(
                 height: 10,
               ),
+              
               RoomOptionButton(
                 title: 'Multiple sharing',
                 isSelected: selectedRoom == 'Multiple sharing',
                 onTap: () => setState(() => selectedRoom = 'Multiple sharing'),
               ),
-              const SizedBox(height: 20),
-
+SizedBox(height: 15,),
               // Proceed Button
               Center(
                 child: ElevatedButton(
